@@ -13,7 +13,7 @@ async def command_start(message: types.Message):
 
 async def get_weather(message: types.Message):
 
-    if message.text.lower() == "приложениv":
+    if message.text.lower() == "приложения":
         await message.answer('Игры 👇', reply_markup=urlkb)
     else:
         code_to_smile = {
