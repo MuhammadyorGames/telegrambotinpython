@@ -12,4 +12,4 @@ urlkb.add(site)
 urlkb.row(csgoM, PNStrike)
 
 
-kb_client.add(b2)
+# kb_client.add(b2)
