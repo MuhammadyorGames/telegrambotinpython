@@ -8,14 +8,11 @@ from data_base import sqlite_db
 
 # @dp.message_handler(commands=['start'])
 async def command_start(message: types.Message):
-    # await bot.send_message(message.from_user.id, 'Здравствуйте введите название города 🏙', reply_markup=kb_client)
-    await bot.send_message(message.from_user.id, 'Здравствуйте чего вы хотите? 🙂', reply_markup=kb_client)
+    await bot.send_message(message.from_user.id, 'Здравствуйте введите название города 🏙', reply_markup=kb_client)
+#     await bot.send_message(message.from_user.id, 'Здравствуйте чего вы хотите? 🙂', reply_markup=kb_client)
 
 async def get_weather(message: types.Message):
-
-    if message.text == "Приложения":
-        await message.answer('Игры 👇', reply_markup=urlkb)
-    else:
+    
         code_to_smile = {
             "Clear": "Ясно ☀",
             "Clouds": "Облачно ⛅",
